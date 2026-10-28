@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дидковский Роман Андреевич — факты о депутате</title>
+
+<!-- Шрифты -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
+
+<style>
+  /* ================= БАЗА ================= */
+  *,*::before,*::after{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+
+  body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:28px;
+    background:#E6EAF1;
+    font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    color:#1A1A1A;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ================= СЛАЙД 16:9 ================= */
+  .slide{
+    position:relative;
+    width:1280px;
+    height:720px;
+    flex:0 0 auto;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:18px 32px 12px;
+    background:linear-gradient(158deg,#FFFFFF 0%,#F7F8FA 52%,#EFF3F9 100%);
+    border-radius:18px;
+    box-shadow:0 30px 70px rgba(16,29,54,.18), 0 4px 12px rgba(16,29,54,.06);
+    break-inside:avoid;
+    page-break-inside:avoid;
+  }
+
+  /* Верхняя акцентная полоса */
+  .topbar{
+    position:absolute;
+    top:0;left:0;right:0;
+    height:6px;
+    background:linear-gradient(90deg,#0A3D91 0%,#1E4FD8 46%,#3F7BEA 78%,#C8102E 100%);
+  }
+
+  /* ================= HERO ================= */
+  .hero{
+    flex:0 0 268px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:32px;
+  }
+
+  .hero-text{max-width:760px;}
+
+  .overline{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.26em;
+    text-transform:uppercase;
+    color:#0A3D91;
+    margin-bottom:14px;
+  }
+  .overline::before{
+    content:"";
+    width:26px;height:2px;
+    background:#C8102E;
+    border-radius:2px;
+  }
+
+  .hero h1{
+    margin:0;
+    font-family:'Unbounded','Montserrat',system-ui,sans-serif;
+    font-size:38px;
+    line-height:1.08;
+    font-weight:800;
+    letter-spacing:-.015em;
+    text-transform:uppercase;
+    color:#101828;
+  }
+
+  /* Фото */
+  .hero-photo{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    flex:0 0 auto;
+    padding-right:4px;
+  }
+  .accent-line{
+    width:3px;
+    height:260px;
+    border-radius:3px;
+    background:linear-gradient(180deg,#C8102E 0%,#C8102E 62%,rgba(200,16,46,.15) 100%);
+  }
+  .hero-photo img{
+    display:block;
+    width:173px;
+    height:260px;
+    object-fit:cover;
+    object-position:center top;
+    border-radius:14px;
+    background:#DDE3EC;
+    box-shadow:0 16px 34px rgba(10,61,145,.20), 0 2px 6px rgba(16,29,54,.10);
+  }
+
+  /* ================= СРЕДНЯЯ ЗОНА ================= */
+  .middle{
+    flex:0 0 200px;
+    display:grid;
+    grid-template-columns:1.08fr .92fr;
+    gap:18px;
+    min-height:0;
+  }
+
+  .card{
+    position:relative;
+    height:100%;
+    overflow:hidden;
+    background:#FFFFFF;
+    border:1px solid #EDF0F5;
+    border-radius:16px;
+    box-shadow:0 6px 22px rgba(16,29,54,.07), 0 1px 3px rgba(16,29,54,.05);
+    padding:14px 20px;
+  }
+
+  /* Карточка вступительного слова */
+  .card-intro{padding-left:22px;}
+  .card-intro::before{
+    content:"";
+    position:absolute;
+    left:0;top:16px;bottom:16px;
+    width:4px;
+    border-radius:0 4px 4px 0;
+    background:linear-gradient(180deg,#0A3D91 0%,#1E4FD8 100%);
+  }
+
+  .intro-greet{
+    margin:0 0 7px;
+    font-size:13px;
+    font-weight:700;
+    line-height:1.45;
+    color:#0A3D91;
+  }
+  .intro-text{
+    margin:0;
+    font-size:13px;
+    line-height:1.55;
+    color:#2B3340;
+  }
+  .intro-sign{
+    margin:9px 0 0;
+    font-size:12px;
+    font-weight:600;
+    line-height:1.4;
+    color:#7A8494;
+  }
+  .intro-sign span{
+    display:inline-block;
+    width:18px;height:2px;
+    margin-right:8px;
+    vertical-align:middle;
+    background:#C8102E;
+    border-radius:2px;
+  }
+
+  /* Карточка биографии */
+  .bio-eyebrow{
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:#8A93A3;
+    line-height:1.1;
+    margin-bottom:5px;
+  }
+  .bio-name{
+    margin:0 0 4px;
+    font-size:15px;
+    font-weight:800;
+    line-height:1.2;
+    letter-spacing:.01em;
+    text-transform:uppercase;
+    color:#101828;
+  }
+  .bio-name .accent{color:#0A3D91;}
+
+  .bio-date{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    font-size:11px;
+    font-weight:700;
+    line-height:1.3;
+    color:#C8102E;
+    margin-bottom:6px;
+  }
+  .bio-date::before{
+    content:"";
+    width:6px;height:6px;
+    border-radius:50%;
+    background:#C8102E;
+  }
+
+  .bio-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  .bio-list li{
+    position:relative;
+    padding:2.5px 0 2.5px 14px;
+    font-size:10.5px;
+    line-height:1.3;
+    color:#333B49;
+    border-top:1px solid #EEF1F6;
+  }
+  .bio-list li:first-child{border-top:none;}
+  .bio-list li::before{
+    content:"";
+    position:absolute;
+    left:0;top:8px;
+    width:5px;height:5px;
+    border-radius:50%;
+    background:#1E4FD8;
+  }
+
+  /* ================= ФАКТЫ ================= */
+  .facts{
+    flex:1 1 auto;
+    min-height:0;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .facts-title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:0 0 8px;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:#101828;
+    line-height:1.2;
+  }
+  .facts-title span{
+    position:relative;
+    padding-bottom:5px;
+  }
+  .facts-title span::after{
+    content:"";
+    position:absolute;
+    left:0;bottom:0;
+    width:100%;height:3px;
+    border-radius:2px;
+    background:#C8102E;
+  }
+
+  .facts-grid{
+    flex:1 1 auto;
+    min-height:0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:repeat(3,1fr);
+    gap:7px 14px;
+  }
+
+  .fact{
+    display:flex;
+    align-items:flex-start;
+    gap:9px;
+    overflow:hidden;
+    padding:6px 11px;
+    background:#FFFFFF;
+    border:1px solid #EDF0F5;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(16,29,54,.045);
+    font-size:10.5px;
+    line-height:1.28;
+    color:#2B3340;
+  }
+  .fact::before{
+    content:"";
+    flex:0 0 auto;
+    width:5px;height:5px;
+    margin-top:5px;
+    border-radius:50%;
+    background:#1E4FD8;
+  }
+  /* Пятый пункт — на всю ширину */
+  .fact:nth-child(5){grid-column:1 / -1;}
+
+  /* ================= ПОДВАЛ ================= */
+  .slide-footer{
+    flex:0 0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-top:1px solid #E3E7EE;
+    padding-top:7px;
+    font-size:10.5px;
+    letter-spacing:.06em;
+    color:#7A8494;
+  }
+  .slide-footer .brand{
+    font-weight:700;
+    color:#0A3D91;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+  }
+
+  /* ================= ПЕЧАТЬ ================= */
+  @media print{
+    @page{size:338.7mm 190.5mm;margin:0;}
+
+    html,body{
+      width:338.7mm;
+      height:190.5mm;
+      margin:0;
+      padding:0;
+      overflow:hidden;
+      background:#FFFFFF;
+      display:block;
+      -webkit-print-color-adjust:exact;
+      print-color-adjust:exact;
+    }
+
+    .slide{
+      width:338.7mm;
+      height:190.5mm;
+      margin:0;
+      border-radius:0;
+      box-shadow:none;
+      break-inside:avoid;
+      page-break-inside:avoid;
+      page-break-after:avoid;
+    }
+
+    .card,.fact,.hero-photo img{box-shadow:none;}
+  }
+</style>
+</head>
+<body>
+
+<main class="slide">
+
+  <!-- Верхняя синяя полоса -->
+  <div class="topbar" aria-hidden="true"></div>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero">
+    <div class="hero-text">
+      <div class="overline">Факты о депутате</div>
+      <h1>Энергия добра —<br>на благо города!</h1>
+    </div>
+
+    <div class="hero-photo">
+      <span class="accent-line" aria-hidden="true"></span>
+      <img src="Фото1.jpg" alt="Роман Андреевич Дидковский">
+    </div>
+  </header>
+
+  <!-- ========== СРЕДНЯЯ ЗОНА ========== -->
+  <section class="middle">
+
+    <!-- Вступительное слово -->
+    <article class="card card-intro">
+      <p class="intro-greet">Уважаемые жители 5 округа, дорогие друзья!</p>
+      <p class="intro-text">
+        Отчёт депутата — это всегда разговор о конкретных делах и о людях,
+        ради которых эти дела делаются. За прошедший год вместе мы прошли
+        большой путь: благоустройство дворов и общественных пространств,
+        поддержка семей участников СВО, помощь ветеранам, решение точечных,
+        но жизненно важных вопросов каждого обратившегося.
+      </p>
+      <p class="intro-sign"><span aria-hidden="true"></span>С уважением, Роман Дидковский</p>
+    </article>
+
+    <!-- Данные из биографии -->
+    <aside class="card card-bio">
+      <div class="bio-eyebrow">Данные из биографии</div>
+      <h2 class="bio-name"><span class="accent">Дидковский</span> Роман Андреевич</h2>
+      <div class="bio-date">13 августа 1989 г.</div>
+
+      <ul class="bio-list">
+        <li>Лицей № 51</li>
+        <li>Служба в 810-й отдельной Гвардейской орденов Жукова и Ушакова бригаде морской пехоты</li>
+        <li>ПВГИС, 2012</li>
+        <li>Самарская академия госуправления, 2024</li>
+        <li>Женат, двое сыновей</li>
+      </ul>
+    </aside>
+
+  </section>
+
+  <!-- ========== ФАКТЫ О ДЕПУТАТЕ ========== -->
+  <section class="facts">
+    <h2 class="facts-title"><span>Факты о депутате</span></h2>
+
+    <div class="facts-grid">
+      <div class="fact">
+        Председатель постоянной комиссии по контролю, общественной безопасности
+        и соблюдению депутатской этики в Думе г.о. Тольятти.
+      </div>
+
+      <div class="fact">
+        Первый заместитель руководителя Ассоциации ветеранов СВО Самарской области.
+      </div>
+
+      <div class="fact">
+        Директор МБУ «Зеленстрой», апрель 2025.
+      </div>
+
+      <div class="fact">
+        Инициатор и один из создателей команды по следж-хоккею «Лада — следж»
+        (г. Тольятти), оказывал помощь в создании следж-хоккейной команды
+        «ЦСК ВВС Следж» (г. Самара).
+      </div>
+
+      <div class="fact">
+        Инициатор и создатель Центра отдыха и реабилитации для участников СВО
+        и членов их семей на п-ве Копылово.
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ПОДВАЛ ========== -->
+  <footer class="slide-footer">
+    <span class="brand">Дидковский Р. А.</span>
+    <span>Отчёт о работе депутата · 5 округ · 2025</span>
+  </footer>
+
+</main>
+
+</body>
+</html>
